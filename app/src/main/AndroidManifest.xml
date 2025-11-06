@@ -5,10 +5,10 @@
         android:label="ComposeBasics"
         android:icon="@mipmap/ic_launcher"
         android:roundIcon="@mipmap/ic_launcher_round"
-        android:theme="@styles/Theme.ComposeBasics">
+        android:theme="@style/Theme.ComposeBasics">
         <activity android:name=".MainActivity"
             android:exported="true"
-            android:theme="@styles/Theme.ComposeBasics">
+            android:theme="@style/Theme.ComposeBasics">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
