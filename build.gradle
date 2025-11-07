@@ -1,5 +1,10 @@
 // Top-level build.gradle
 buildscript {
+
+    ext {
+        compose_version = "1.0.1"
+    }
+
     repositories {
         google()
         mavenCentral()
