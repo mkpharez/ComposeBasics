@@ -25,6 +25,25 @@ class MainActivity : ComponentActivity() {
 }
 
 @Composable
+fun OutlinedCardExample() {
+    OutlinedCard(
+        colors = CardDefaults.cardColors(
+            containerColor = MaterialTheme.colorScheme.surface,
+        ),
+        border = BorderStroke(1.dp, Color.Black),
+        modifier = Modifier
+            .size(width = 240.dp, height = 100.dp)
+    ) {
+        Text(
+            text = "Outlined",
+            modifier = Modifier
+                .padding(16.dp),
+            textAlign = TextAlign.Center,
+        )
+    }
+}
+
+@Composable
 fun MyApp() {
     val navController = rememberNavController()
     NavHost(navController, startDestination = "landing") {
